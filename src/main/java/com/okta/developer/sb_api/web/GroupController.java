@@ -25,7 +25,7 @@ import com.okta.developer.sb_api.model.GroupRepository;
 
 
 
-@RestController                       // ...handling of all incmong HTTP requests
+@RestController                       // ...handling of all incoming HTTP requests
 @RequestMapping("/api")
 public class GroupController {
 

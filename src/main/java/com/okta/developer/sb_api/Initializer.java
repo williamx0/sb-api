@@ -27,15 +27,15 @@ public class Initializer implements CommandLineRunner {    // this initilizer is
                 repository.save(new Group())
         );
         
-        Group djug = repository.findByName("Lagos JG"); 
+        /*** Group djug = repository.findByName("Lagos JG"); 
         Event e = Event.builder().title("xxxxx for Java Developers")
                 .description("Jhxxxx now has microfrontend support!")
-                .date(Instant.parse("2024-05-13T17:00:00.000Z"))
+                .date(Instant.parse("2022-09-13T17:00:00.000Z"))
                 .build(); 
         djug.setEvents(Collections.singleton(e)); 
         repository.save(djug);
 
-        repository.findAll().forEach(System.out::println);
+        repository.findAll().forEach(System.out::println); ***/
     
     }
     
