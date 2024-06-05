@@ -33,10 +33,9 @@ public class Initializer implements CommandLineRunner {  // this initilizer is u
                 .date(Instant.parse("2022-09-13T17:00:00.000Z"))
                 .build(); 
         djug.setEvents(Collections.singleton(e)); 
-        repository.save(djug);
-
-        repository.findAll().forEach(System.out::println); 
-    
+        repository.save(djug); 
+       
+        repository.findAll().forEach(System.out::println);
     }
     
 }
