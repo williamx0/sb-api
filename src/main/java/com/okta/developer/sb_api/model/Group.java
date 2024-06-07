@@ -13,9 +13,11 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Data 
+@NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
 @Table(name = "user_group")

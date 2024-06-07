@@ -24,7 +24,7 @@ public class Initializer implements CommandLineRunner {  // this initilizer is u
     public void run(String... strings) {
         Stream.of("Lagos JG", "Nairobi JG", "London JG", 
                 "Atlanta JG").forEach(name ->
-                repository.save(new Group())
+                repository.save(new Group(name))
         );
         
         Group djug = repository.findByName("Lagos JG"); 
