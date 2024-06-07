@@ -2,7 +2,8 @@ package com.okta.developer.sb_api.model;
 
 import java.util.Set;
 
-import io.micrometer.common.lang.NonNull;
+import jakarta.annotation.Nonnull;
+//import io.micrometer.common.lang.NonNull;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -24,7 +25,7 @@ public class Group {
     @GeneratedValue
     private Long id; 
 
-    @NonNull
+    @Nonnull
     private String name; 
     private String address; 
     private String city; 
