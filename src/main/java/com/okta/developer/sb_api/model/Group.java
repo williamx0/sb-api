@@ -3,7 +3,6 @@ package com.okta.developer.sb_api.model;
 import java.util.Set;
 
 import jakarta.annotation.Nonnull;
-//import io.micrometer.common.lang.NonNull;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -35,10 +34,10 @@ public class Group {
     private String country; 
     private String postalCode; 
     
-    @ManyToOne(cascade=CascadeType.PERSIST)  // one user can be a part of many groups
+    @ManyToOne(cascade=CascadeType.PERSIST)           // one user can be a part of many groups
     private User user; 
 
-    //one group can have many events 
+    // one group can have many events 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Event> events; 
 
