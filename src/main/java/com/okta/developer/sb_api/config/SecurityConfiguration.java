@@ -13,6 +13,7 @@ import org.springframework.security.web.savedrequest.SimpleSavedRequest;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+
 public class SecurityConfiguration {
 
     @Bean
@@ -29,6 +30,7 @@ public class SecurityConfiguration {
             )
             .addFilterAfter(new CookieCsrfFilter(), BasicAuthenticationFilter.class)
             .oauth2Login();
+            
         return http.build();
     }
 

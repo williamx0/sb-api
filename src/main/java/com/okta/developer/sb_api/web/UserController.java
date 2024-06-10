@@ -12,6 +12,7 @@ public class UserController {
 
     @PostMapping("/api/logout")
     public ResponseEntity<?> logout(HttpServletRequest request) {
+
         // send logout URL to client so they can initiate logout
         StringBuilder logoutUrl = new StringBuilder();
         String issuerUri = this.registration.getProviderDetails().getIssuerUri();
@@ -22,6 +23,7 @@ public class UserController {
         logoutDetails.put("logoutUrl", logoutUrl.toString());
         request.getSession(false).invalidate();
         return ResponseEntity.ok().body(logoutDetails);
+
     }
 
 }
