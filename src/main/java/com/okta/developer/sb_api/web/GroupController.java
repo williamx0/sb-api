@@ -1,6 +1,5 @@
 package com.okta.developer.sb_api.web;
 
-
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Collection;
@@ -23,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.okta.developer.sb_api.model.Group;
 import com.okta.developer.sb_api.model.GroupRepository;
+import com.okta.developer.sb_api.model.UserRepository;
 
 
 
@@ -32,9 +32,11 @@ public class GroupController {
 
     private final Logger log = LoggerFactory.getLogger(GroupController.class);
     private GroupRepository groupRepository; 
+    private UserRepository userRepository;
 
-    public GroupController(GroupRepository groupRepository) {
+    public GroupController(GroupRepository groupRepository, UserRepository userRepository) {
         this.groupRepository = groupRepository; 
+        this.userRepository = userRepository;
     }
 
     @GetMapping("/groups")
