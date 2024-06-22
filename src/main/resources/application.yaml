@@ -1,1 +1,3 @@
 spring.application.name=sb-api
+
+spring.profiles.active=@spring.profiles.active@
