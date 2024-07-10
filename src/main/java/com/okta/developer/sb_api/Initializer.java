@@ -23,7 +23,7 @@ public class Initializer implements CommandLineRunner {  // this initilizer is u
     @Override
     public void run(String... strings) {
         Stream.of("Lagos JG", "Nairobi JG", "London JG", 
-                "Atlanta JG").forEach(name ->
+                "Atlanta JG", "Dakar").forEach(name ->
                 repository.save(new Group(name))
         );
         
