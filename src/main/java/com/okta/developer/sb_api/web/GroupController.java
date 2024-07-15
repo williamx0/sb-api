@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.security.Principal;
+import java.util.Collection;
 //import java.security.Principal;
 //import java.util.Collection;
 import java.util.Map;
@@ -33,10 +35,10 @@ class GroupController {
         this.userRepository = userRepository;
     }
 
-    @GetMapping("/groups")
+    /*** @GetMapping("/groups")
     Collection<Group> groups(Principal principal) {
         //return groupRepository.findAllByUserId(principal.getName());
-    } 
+    }  ***/
 
     @GetMapping("/group/{id}")
     ResponseEntity<?> getGroup(@PathVariable Long id) {
