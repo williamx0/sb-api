@@ -33,10 +33,10 @@ class GroupController {
         this.userRepository = userRepository;
     }
 
-    /***@GetMapping("/groups")
+    @GetMapping("/groups")
     Collection<Group> groups(Principal principal) {
         //return groupRepository.findAllByUserId(principal.getName());
-    }  ***/
+    } 
 
     @GetMapping("/group/{id}")
     ResponseEntity<?> getGroup(@PathVariable Long id) {
