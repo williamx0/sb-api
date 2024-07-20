@@ -12,7 +12,7 @@ import com.okta.developer.sb_api.model.Group;
 import com.okta.developer.sb_api.model.GroupRepository;
 
 @Component
-public class Initializer implements CommandLineRunner {  // this initilizer is used to load some default data into the database 
+public class Initializer implements CommandLineRunner {      // this initilizer is used to load some default data into the database 
 
     private final GroupRepository repository;
 

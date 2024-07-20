@@ -28,4 +28,5 @@ public class Event {
     
     @ManyToMany
     private Set<User> attendees; 
+    
 }
