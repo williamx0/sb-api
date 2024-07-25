@@ -34,7 +34,9 @@ public class Group {
     private String country; 
     private String postalCode; 
     
-    @ManyToOne(cascade=CascadeType.PERSIST)           // one user can be a part of many groups
+    
+    // one user can be a part of many groups
+    @ManyToOne(cascade=CascadeType.PERSIST)       
     private User user; 
 
     // one group can have many events 
